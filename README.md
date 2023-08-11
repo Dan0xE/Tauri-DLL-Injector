@@ -34,7 +34,7 @@ Install frontend dependencies:
 You can either use the provided batch build script or copy and paste this:
 
 ```bash
-gcc -shared -o inject.dll main.c -Wl,--output-def,exports.def,--out-implib,libinject.lib
+gcc -shared -o inject.dll main.c -Wl,--output-def,exports.def,--out-implib,inject.lib
 ```
 
 then copy and paste this lib and the dll file into src-tauri
