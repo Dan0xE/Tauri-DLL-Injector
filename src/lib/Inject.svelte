@@ -8,7 +8,6 @@
 
   async function select() {
     open().then((res: string) => res ? dllPath  = res : message = "No Dll provided")
-    console.log(dllPath)
   }
 
   async function inject(){
