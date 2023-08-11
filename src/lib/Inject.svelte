@@ -2,12 +2,12 @@
   import { invoke } from "@tauri-apps/api/tauri"
   import { open } from "@tauri-apps/api/dialog"
 
-  let pid: number = 0;
+  let pid: number;
   let message = "";
   let dllPath = "";
 
   async function select() {
-    open().then((res: string) => res ? dllPath  = res : message = "No Dll provided")
+    open().then((res: string) => res ? dllPath  = res : message = "No DLL provided")
   }
 
   async function inject(){
