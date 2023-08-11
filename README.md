@@ -62,4 +62,4 @@ This project is licensed under the MIT License
 ## Acknowledgments
 
 [Tauri](https://tauri.app/) For providing a lightweight framework to build cross-platform applications.
-[Tsoding](https://github.com/tsoding) For coding inspiration and standards.
+[Tsoding](https://github.com/tsoding) For coding inspiration.
