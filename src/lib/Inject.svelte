@@ -7,7 +7,12 @@
   let dllPath = "";
 
   async function select() {
-    open().then((res: string) => res ? dllPath  = res : message = "No DLL provided")
+    open({
+      filters: [{
+        name: "",
+        extensions: ['dll']
+      }]
+    }).then((res: string) => res ? dllPath  = res : message = "No DLL provided")
   }
 
   async function inject(){
@@ -18,6 +23,6 @@
 <div>
     <input id="greet-input" placeholder="Enter a PID" bind:value={pid} />
     <button on:click={() => select()}>Select DLL</button>
-    <button on:click={() => inject()}>Inject</button>
+    {#if dllPath}<button on:click={() => inject()}>Inject</button>{/if}
   <p>{message}</p>
 </div>
