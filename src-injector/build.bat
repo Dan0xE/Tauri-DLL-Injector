@@ -1,1 +1,0 @@
-gcc -shared -o inject.dll main.c -Wl,--output-def,exports.def,--out-implib,libinject.lib
